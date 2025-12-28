@@ -3,6 +3,29 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --color-bgColor: #F9FAFB;
+  --color-textColor: #111827;
+  --color-primaryColor: #0F766E;
+  --color-secondaryColor: #D1FAE5;
+  --font-garamond:  "Cormorant Garamond", serif;
+  --font-mont: "Montserrat", sans-serif;
+  
+}
+
+@layer base{
+  body{
+    @apply bg-bgColor;
+  }
+  p{
+    @apply font-mont text-textColor text-lg;
+  }
+  h1{
+    @apply font-garamond text-6xl text-textColor;
+  }
+}
+
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -117,7 +140,5 @@
   * {
     @apply border-border outline-ring/50;
   }
-  body {
-    @apply bg-background text-foreground;
-  }
+  
 }
