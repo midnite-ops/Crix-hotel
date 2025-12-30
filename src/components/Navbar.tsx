@@ -6,7 +6,7 @@ function Navbar() {
   function handleClick(value: string) {
     setActive(value);
   }
-  const navLinks = ["Home", "Features", "Testimonial", "FAQ"];
+  const navLinks = ["Home", "Rooms", "Amenities", "Gallery"];
   return (
     <nav className="flex justify-between items-center p-4" id="navbar">
       <div className="flex space-x-5 items-center">
@@ -22,7 +22,7 @@ function Navbar() {
             <li
               key={index}
               className={`font-alex text-gray-500 hover:cursor-pointer text-[16px] ${
-                active === item ? "text-white" : ""
+                active === item ? "text-bgColor" : ""
               }`}
               onClick={() => {
                 handleClick(item);
@@ -34,8 +34,7 @@ function Navbar() {
         </ul>
       </div>
       <div className="space-x-5 items-center hidden lg:flex">
-        <p>Log in</p>
-        <button>Try For Free</button>
+        <button className="btn-primary">Reserve</button>
       </div>
     </nav>
   );

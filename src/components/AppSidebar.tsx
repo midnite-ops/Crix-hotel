@@ -16,22 +16,22 @@ import {
 const menu = [
   {
     title: 'Home',
-    url: '#Home',
+    url: '#home',
     icon: Home
   },
   {
-    title: 'Features',
-    url: '#Features',
+    title: 'Rooms',
+    url: '#rooms',
     icon: BadgeCheck
   },
   {
-    title: 'Testimonial',
-    url: '#Testimonial',
+    title: 'Gallery',
+    url: '#gallery',
     icon: Anchor
   },
   {
-    title: 'FAQ',
-    url: '#FAQ',
+    title: 'Amenities',
+    url: '#amenities',
     icon: CircleQuestionMark
   }
 ]

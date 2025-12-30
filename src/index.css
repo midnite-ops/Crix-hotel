@@ -14,14 +14,26 @@
 }
 
 @layer base{
-  body{
-    @apply bg-bgColor;
+  * {
+    @apply border-border outline-ring/50;
   }
   p{
     @apply font-mont text-textColor text-lg;
   }
   h1{
     @apply font-garamond text-6xl text-textColor;
+  }
+  body{
+    @apply bg-bgColor text-textColor pb-100;
+  }
+}
+
+@layer components{
+  .section-spacing{
+    @apply py-5 px-5 md:px-10 md:py-20 mb-15;
+  }
+  .btn-primary{
+    @apply border border-textColor font-mont py-2 px-5 hover:bg-primaryColor/90 transition-all  hover:text-white cursor-pointer hover:border-primaryColor;
   }
 }
 
@@ -134,11 +146,4 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
-}
-
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  
 }
