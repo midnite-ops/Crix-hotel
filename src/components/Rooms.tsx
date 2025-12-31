@@ -3,7 +3,7 @@ import deluxe from '../assets/rooms/deluxe.jpg';
 import suite from '../assets/rooms/exquisite.jpg';
 export default function Rooms() {
   return (
-    <section className="section-spacing">
+    <section className="section-spacing" id='rooms'>
         <div className="flex flex-col  h-full w-full">
             <div className="flex justify-center items-center flex-col mb-10 gap-3">
                 <h1 className="text-center">Rooms and Suite</h1>

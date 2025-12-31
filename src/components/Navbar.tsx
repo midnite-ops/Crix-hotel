@@ -14,7 +14,7 @@ function Navbar() {
         <h1 className="font-medium text-[22px]">Crix Nook</h1>
       </div>
       <SidebarTrigger className="bg-transparent lg:hidden ">
-        <MenuIcon className="h-4 w-4" />
+        <MenuIcon className="h-8 w-8" />
       </SidebarTrigger>
       <div className="hidden lg:flex">
         <ul className="flex space-x-10 items-center">
@@ -28,7 +28,7 @@ function Navbar() {
                 handleClick(item);
               }}
             >
-              <a href={`#${item}`}>{item}</a>
+              <a href={`#${item[0].toLowerCase()}${item.slice(1)}`}>{item}</a>
             </li>
           ))}
         </ul>

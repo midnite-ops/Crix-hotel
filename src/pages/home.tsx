@@ -6,7 +6,7 @@ import Gallery from "@/components/Gallery";
 function Home() {
   return (
     <main>
-      <section id="hero" className="min-h-screen relative w-full ">
+      <section id="home" className="min-h-screen relative w-full ">
         {/* 
         <div className="absolute inset-0 bg-black/40"></div> */}
         <Navbar />
@@ -52,6 +52,36 @@ function Home() {
       </section>
 
       <Rooms />
+
+      <section id="amenities" className="section-spacing bg-secondaryColor h-auto md:h-200 py-15">
+        <div className="flex flex-col md:flex-row h-full w-full">
+          <div className=" flex-1 flex items-end">
+            <h1>Amenities <br /> & Facilities</h1>
+          </div>
+
+          <div className="flex-1 self-start grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-2 gap-y-10 mt-10 md:mt-0">
+            <div className="border-l-textColor border-l pl-5">
+              <h2 className="font-garamond text-2xl mb-2">Free Wifi</h2>
+              <p className="text-base">Stay connected effortlessly with fast and reliable internet access throughout the hotel. Perfect for business travelers, remote work, and guests who want to stream, browse, or stay in touch without interruptions.</p>
+            </div>
+
+            <div className="border-l-textColor border-l pl-5">
+              <h2 className="font-garamond text-2xl mb-2">On-Site Dining</h2>
+              <p className="text-base">Enjoy freshly prepared meals made from carefully selected ingredients. Our dining experience offers a mix of local and international flavors, served in a relaxed and welcoming atmosphere..</p>
+            </div>
+
+            <div className="border-l-textColor border-l pl-5">
+              <h2 className="font-garamond text-2xl mb-2">24/7 Guest Services</h2>
+              <p className="text-base">Our front desk and guest services are available around the clock to ensure a smooth and comfortable stay. From check-ins to special requests, help is always just a moment away.</p>
+            </div>
+
+            <div className="border-l-textColor border-l pl-5">
+              <h2 className="font-garamond text-2xl mb-2">Elegant Rooms & Suites</h2>
+              <p className="text-base">Thoughtfully designed rooms that blend modern comfort with warm, calming interiors. Each space is crafted to give guests a peaceful retreat, whether they’re staying for a night or an extended visit.</p>
+            </div>
+          </div>
+        </div>
+      </section>
       <Gallery />
       <Footer />
     </main>

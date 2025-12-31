@@ -167,3 +167,8 @@ Why This Content Works (Important)
 It shows:
 
 “I understand what hotel guests care about.”
+
+
+
+
+https://framermotionexamples.com/examples?s=has_sandbox-animate_presence-shared_layout
