@@ -59,7 +59,7 @@ function Home() {
             <h1>Amenities <br /> & Facilities</h1>
           </div>
 
-          <div className="flex-1 self-start grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-2 gap-y-10 mt-10 md:mt-0">
+          <div className="flex-1 self-start grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-y-10 gap-x-10 md:gap-y-20 mt-10 md:mt-0">
             <div className="border-l-textColor border-l pl-5">
               <h2 className="font-garamond text-2xl mb-2">Free Wifi</h2>
               <p className="text-base">Stay connected effortlessly with fast and reliable internet access throughout the hotel. Perfect for business travelers, remote work, and guests who want to stream, browse, or stay in touch without interruptions.</p>
