@@ -1,6 +1,8 @@
 import heroBg from "@/assets/hero/hero-placeholder.jpg";
 import Navbar from "../components/Navbar";
 import Rooms from "@/components/Rooms";
+import Footer from "@/components/Footer";
+import Gallery from "@/components/Gallery";
 function Home() {
   return (
     <main>
@@ -30,7 +32,7 @@ function Home() {
         </div>
       </section>
 
-      <section id="about" className="bg-secondaryColor h-155 section-spacing pt-15">
+      <section id="about" className="bg-secondaryColor h-155 section-spacing pt-15 md:pt-20">
         <div className="flex flex-col md:flex-row h-full w-full">
             <div className="flex-1">
                 <h1>About <br className="hidden md:block"/> Crix Nook Hotel</h1>
@@ -50,6 +52,8 @@ function Home() {
       </section>
 
       <Rooms />
+      <Gallery />
+      <Footer />
     </main>
   );
 }

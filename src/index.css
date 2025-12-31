@@ -18,19 +18,19 @@
     @apply border-border outline-ring/50;
   }
   p{
-    @apply font-mont text-textColor text-lg;
+    @apply font-mont text-textColor text-base md:text-lg;
   }
   h1{
-    @apply font-garamond text-6xl text-textColor;
+    @apply font-garamond font-extralight text-6xl text-textColor;
   }
   body{
-    @apply bg-bgColor text-textColor pb-100;
+    @apply bg-bgColor text-textColor ;
   }
 }
 
 @layer components{
   .section-spacing{
-    @apply py-5 px-5 md:px-10 md:py-20 mb-15;
+    @apply py-5 px-5 md:px-10 md:py-20 mb-10 md:mb-0;
   }
   .btn-primary{
     @apply border border-textColor font-mont py-2 px-5 hover:bg-primaryColor/90 transition-all  hover:text-white cursor-pointer hover:border-primaryColor;
