@@ -1,8 +1,8 @@
-import gal1 from '../assets/gallery/gal-1.jpg';
-import gal2 from '../assets/gallery/gal-2.jpg';
-import gal3 from '../assets/gallery/gal-3.jpg';
-import gal4 from '../assets/gallery/gal-4.jpg';
-import gal5 from '../assets/gallery/gal-5.jpg';
+import gal1 from '../assets/gallery/gal-1.webp';
+import gal2 from '../assets/gallery/gal-2.webp';
+import gal3 from '../assets/gallery/gal-3.webp';
+import gal4 from '../assets/gallery/gal-4.webp';
+import gal5 from '../assets/gallery/gal-5.webp';
 export default function Gallery() {
   return (
     <section id='gallery' className='section-spacing'>
@@ -13,19 +13,19 @@ export default function Gallery() {
 
         <div className="grid grid-cols-1 grid-rows-5 md:grid-cols-3 md:grid-rows-2 gap-6">
             <div className='md:row-span-2 md:col-span-1 overflow-hidden'>
-                <img src={gal3} alt="a hotel image" className='w-full h-full object-cover ' />
+                <img src={gal3} alt="a hotel image" className='w-full h-full object-cover ' loading='lazy'/>
             </div>
             <div className='overflow-hidden'>
-                <img src={gal1} alt="a hotel image" className='w-full h-full object-cover' />
+                <img src={gal1} alt="a hotel image" className='w-full h-full object-cover' loading='lazy'/>
             </div>
             <div className='overflow-hidden'>
-                <img src={gal2} alt="a hotel image" className='w-full h-full object-cover' />
+                <img src={gal2} alt="a hotel image" className='w-full h-full object-cover' loading='lazy'/>
             </div>
             <div className='overflow-hidden'>
-                <img src={gal4} alt="a hotel image" className='w-full h-full object-cover ' />
+                <img src={gal4} alt="a hotel image" className='w-full h-full object-cover ' loading='lazy'/>
             </div>
             <div className='overflow-hidden'>
-                <img src={gal5} alt="a hotel image" className='w-full h-full object-cover' />
+                <img src={gal5} alt="a hotel image" className='w-full h-full object-cover' loading='lazy'/>
             </div>
         </div>
         

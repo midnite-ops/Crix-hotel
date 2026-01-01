@@ -1,6 +1,6 @@
-import standard from '../assets/rooms/standard .jpg';
-import deluxe from '../assets/rooms/deluxe.jpg';
-import suite from '../assets/rooms/exquisite.jpg';
+import standard from '../assets/rooms/standard .webp';
+import deluxe from '../assets/rooms/deluxe.webp';
+import suite from '../assets/rooms/exquisite.webp';
 export default function Rooms() {
   return (
     <section className="section-spacing" id='rooms'>
@@ -14,7 +14,7 @@ export default function Rooms() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-6">
                 <div className='row-span-2 cursor-pointer relative overflow-hidden group'>
-                    <img src={suite} alt="suite room" className='h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105'/>
+                    <img src={suite} alt="suite room" className='h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105' loading='lazy'/>
 
                     {/* Overlay with title and description */}
                     <div className="absolute inset-0  md:group-hover:bg-black/60 bg-black/60 md:bg-transparent  transition-colors duration-500 " />
@@ -33,7 +33,7 @@ export default function Rooms() {
                  
 
                 <div className='cursor-pointer relative overflow-hidden group'>
-                    <img src={deluxe} alt="suite room" className='h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105'/>
+                    <img src={deluxe} alt="suite room" className='h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105' loading='lazy'/>
 
                     {/* Overlay with title and description */}
                     <div className="absolute inset-0  md:group-hover:bg-black/60 bg-black/60 md:bg-transparent transition-colors duration-500 " />
@@ -50,7 +50,7 @@ export default function Rooms() {
                 </div>
 
                 <div className='cursor-pointer relative overflow-hidden group'>
-                    <img src={standard} alt="suite room" className='h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105'/>
+                    <img src={standard} alt="suite room" className='h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105' loading='lazy'/>
 
                     {/* Overlay with title and description */}
                     <div className="absolute inset-0 bg-black/60 md:bg-transparent  md:group-hover:bg-black/60 transition-colors duration-500 " />
