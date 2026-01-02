@@ -39,11 +39,11 @@ const menu = [
 export default function AppSidebar() {
   const { toggleSidebar } = useSidebar()
   return (
-    <Sidebar className='z-50'>
+    <Sidebar className='z-50 '>
       <SidebarContent>
-        <SidebarGroup>
+        <SidebarGroup className=' pt-4'>
           <SidebarGroupLabel className='flex justify-between'>
-            NeoFi
+            <h2 className='font-garamond text-2xl mb-4'>Crix Nook</h2>
             <Button
               variant="ghost"
               size="icon"
